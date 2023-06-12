@@ -1,5 +1,5 @@
 {
-  "name": "@app-name/source",
+  "name": "@quizly/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {

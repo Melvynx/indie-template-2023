@@ -1,4 +1,4 @@
-import { prisma } from '@app-name/prisma';
+import { prisma } from '@quizly/prisma';
 import { stripe } from './stripe';
 
 export const setupStripeCustomer = async (user: {

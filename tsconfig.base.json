@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app-name/openai": ["packages/openai/src/index.ts"],
-      "@app-name/prisma": ["packages/prisma/src/index.ts"],
-      "@app-name/stripe": ["packages/stripe/src/index.ts"],
-      "@app-name/ui": ["packages/ui/src/index.ts"]
+      "@quizly/openai": ["packages/openai/src/index.ts"],
+      "@quizly/prisma": ["packages/prisma/src/index.ts"],
+      "@quizly/stripe": ["packages/stripe/src/index.ts"],
+      "@quizly/ui": ["packages/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

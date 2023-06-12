@@ -1,5 +1,5 @@
-import { prisma } from '@app-name/prisma';
-import { setupStripeCustomer } from '@app-name/stripe';
+import { prisma } from '@quizly/prisma';
+import { setupStripeCustomer } from '@quizly/stripe';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import {
   GetServerSidePropsContext,

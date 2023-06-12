@@ -21,10 +21,10 @@
     "paths": {
       // Add all packages used in the project here
       "~/*": ["./src/*"],
-      "@app-name/openai": ["../openai/src/index.ts"],
-      "@app-name/prisma": ["../prisma/src/index.ts"],
-      "@app-name/stripe": ["../stripe/src/index.ts"],
-      "@app-name/ui": ["../ui/src/index.ts"]
+      "@quizly/openai": ["../openai/src/index.ts"],
+      "@quizly/prisma": ["../prisma/src/index.ts"],
+      "@quizly/stripe": ["../stripe/src/index.ts"],
+      "@quizly/ui": ["../ui/src/index.ts"]
     }
   },
   "include": [
