@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-before-interactive-script-outside-document */
 import { Metadata } from 'next';
+import Script from 'next/script';
 import { ThemeProviderBody } from '../src/theme/ThemeProvider';
 import './global.css';
 import { Providers } from './providers';
@@ -23,11 +24,10 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <Providers>
-        <ThemeProviderBody className="h-full flex flex-col">
-          {children}
-        </ThemeProviderBody>
-      </Providers>
+      <ThemeProviderBody className="h-full flex flex-col">
+        <Providers>{children}</Providers>
+        <Script src="./theme.js" strategy="beforeInteractive"></Script>
+      </ThemeProviderBody>
     </html>
   );
 }
