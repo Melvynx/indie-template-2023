@@ -1,3 +1,3 @@
-export default function page() {
-  return <div>Hello world page</div>;
+export default function Page() {
+  return <div className="">Indie project starter 2023</div>;
 }

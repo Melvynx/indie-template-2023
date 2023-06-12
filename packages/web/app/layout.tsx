@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-before-interactive-script-outside-document */
 import { Metadata } from 'next';
-import Script from 'next/script';
-import { Header } from '../src/components/feature/header/Header';
-import { ThemeProviderBody } from '../src/components/feature/theme/ThemeContext';
+import { ThemeProviderBody } from '../src/theme/ThemeProvider';
 import './global.css';
 import { Providers } from './providers';
 
@@ -25,16 +23,11 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <ThemeProviderBody className="h-full flex flex-col">
-        <Providers>
-          {/* @ts-expect-error server component */}
-          <Header />
-          <div className="flex-1" style={{ height: 'calc(100% - 57px)' }}>
-            {children}
-          </div>
-        </Providers>
-        <Script src="./theme.js" strategy="beforeInteractive"></Script>
-      </ThemeProviderBody>
+      <Providers>
+        <ThemeProviderBody className="h-full flex flex-col">
+          {children}
+        </ThemeProviderBody>
+      </Providers>
     </html>
   );
 }

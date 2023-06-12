@@ -1,2 +1,2 @@
-export const APP_NAME = 'Chat2Code';
-export const LOGO_FILE_PATH = '/chat2code.png';
+export const APP_NAME = 'app_name';
+export const LOGO_FILE_PATH = '/file.png';

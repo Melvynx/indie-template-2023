@@ -1,6 +1,6 @@
+import { prisma } from '@app-name/prisma';
+import { setupStripeCustomer } from '@app-name/stripe';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import { prisma } from '@react-gpt/prisma';
-import { setupStripeCustomer } from '@react-gpt/stripe';
 import {
   GetServerSidePropsContext,
   NextApiRequest,
